@@ -249,3 +249,20 @@ body.alt-theme #todo-list li {
   background: rgba(2, 6, 23, 0.6);
   color: #e5e7eb;
 }
+
+body.alt-theme #theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background: rgba(32, 223, 248, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 225, 255, 0.425);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
