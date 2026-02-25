@@ -8,6 +8,8 @@ on:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
+    paths:
+      - "src/frontend/**"
 
 jobs:
   build_and_deploy_job:
@@ -56,6 +58,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_MANGO_PLANT_0B3DD0003 }}
           action: "close"
+
 
 
 
