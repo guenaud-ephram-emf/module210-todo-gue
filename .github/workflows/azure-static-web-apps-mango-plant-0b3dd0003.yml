@@ -40,6 +40,9 @@ jobs:
 
       - name: Lighthouse CI Action
         uses: treosh/lighthouse-ci-action@12.6.1
+        with:
+          urls: |
+            https://todo-app.ephramguenaud.emf-informatique.ch/
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
@@ -51,4 +54,5 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_MANGO_PLANT_0B3DD0003 }}
           action: "close"
+
 
